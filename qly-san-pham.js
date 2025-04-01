@@ -99,12 +99,10 @@ let currentProduct = null;
 let editingProductId = null;
 
 //Sự kiện DOMContentLoaded: Đảm bảo mã chỉ chạy sau khi DOM được tải hoàn toàn.
-// renderProductGrid(): Hiển thị danh sách sản phẩm dưới dạng lưới (grid).
-// renderProductTable(): Hiển thị danh sách sản phẩm dưới dạng bảng (table).
-// Xem trước ảnh: Khi người dùng nhập URL ảnh vào input productImageUrl, ảnh sẽ được hiển thị trong phần tử imagePreview. Nếu URL rỗng, ảnh sẽ bị ẩn.
 document.addEventListener('DOMContentLoaded', function() {
-    renderProductGrid();
-    renderProductTable();
+    renderProductGrid(); //Hiển thị danh sách sản phẩm dưới dạng lưới (grid).
+    renderProductTable(); // renderProductTable(): Hiển thị danh sách sản phẩm dưới dạng bảng (table).
+
 
     // Thêm sự kiện input để xem trước ảnh khi nhập URL
     document.getElementById('productImageUrl').addEventListener('input', function() {
